@@ -1,3 +1,10 @@
+body {
+	font-family: 'Roboto',sans-serif;
+	font-size: 0.9em;
+}
 a {
 	text-decoration: none;
+}
+nav ul {
+	list-style:none;
 }
