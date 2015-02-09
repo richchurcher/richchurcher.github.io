@@ -1,17 +1,53 @@
+/*
+ * https://color.adobe.com/Orange-on-gray-color-theme-2221/
+ * #db4105 - orange
+ * #9fb4cc - blue
+ * #33332d - dark grey
+ * #cccc9f - light grey
+ * #fff8e3 - pale
+ */
+
 body {
-	font-family: 'Roboto',sans-serif;
-	font-size: 0.9em;
+	font-family: 'Roboto', courier, sans-serif;
+	font-size: 1em;
+	padding: 20px;
+	background-color: #fff8e3;
+	color: #33332d;
 }
 header {
-	text-align: right;
+	float: right;
 }
 h1 {
-	font-family: 'Shadows Into Light Two';cursive;
+	font-family: "Shadows Into Light Two", cursive;
+	font-size: 5em;
+	font-weight: bold;
+	letter-spacing: 0.2em;
+	margin: 0px 0px 0px 0px;
 }
 a {
 	text-decoration: none;
 }
+header a {
+	color: #cccc9f;
+}
+header a:hover {
+	color: #db4105;
+}
+header a:active {
+	color: #33332d;
+}
+header a:visited {
+	#ccc;
+}
 nav li {
 	list-style:none;
 	display:inline-block;
+	font-size: 3em;
+	font-weight: bold;
+	color: #aaa;
+	margin: 0px 20px; 0px; 20px;
+}
+nav {
+	float: right;
+	margin: 0px 50px 0px 0px;
 }
