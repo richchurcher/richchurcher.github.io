@@ -42,12 +42,13 @@ header a:visited {
 nav li {
 	list-style:none;
 	display:inline-block;
-	font-size: 3em;
+	font-family: "Shadows Into Light Two", cursive;
+	font-size: 4em;
 	font-weight: bold;
 	color: #aaa;
 	margin: 0px 20px; 0px; 20px;
 }
 nav {
 	float: right;
-	margin: 0px 50px 0px 0px;
+	margin: 0px 75px 0px 0px;
 }
