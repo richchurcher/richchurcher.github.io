@@ -11,16 +11,43 @@
 	<h1><a href="index.html">Kingfishing</a></h1>
 		<nav>
 		<ul>
-			<li id="list"><a href="list.html">...</a></li>
-			<li id="about"><a href="about.html">?</a></li>
-			<li id="tech"><a href="tech.html">!</a></li>
+			<li><button id="list">...</button></li>
+			<li><button id="about">?</button></li>
+			<li><button id="tech">!</button></li>
 		</ul>
 		</nav>
 	</header>
 	<main>
-		<section></section>
-		<section></section>
+		<section id="offscreen-left">
+			<p>Left.</p>
+		</section>
+		<section id="offscreen-top">
+			<p>Top.</p>
+		</section>
+		<section id="offscreen-right">
+			<p>Right.</p>
+		</section>
+		<section id="onscreen">
+			<p>Main.</p>
+		</section>
 	</main>
 	<footer></footer>
+	<script type="text/javascript">
+		// Plain ol' JS for now...
+		document.addEventListener("DOMContentLoaded", function(event) { 
+			document.getElementById("list").addEventListener("click", function () {
+				document.body.classList.toggle("left-active");
+				document.body.classList.remove("top-active", "right-active");
+			});
+			document.getElementById("about").addEventListener("click", function () {
+				document.body.classList.toggle("top-active");
+				document.body.classList.remove("left-active", "right-active");
+			});
+			document.getElementById("tech").addEventListener("click", function () {
+				document.body.classList.toggle("right-active");
+				document.body.classList.remove("left-active", "top-active");
+			});
+		});
+	</script>
 </body>
 </html>

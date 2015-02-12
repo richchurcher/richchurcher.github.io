@@ -13,6 +13,7 @@ body {
 	padding: 20px;
 	background-color: #fff8e3;
 	color: #33332d;
+	overflow-x: hidden; /* no scrollbars for us */
 }
 header {
 	float: right;
@@ -22,7 +23,7 @@ h1 {
 	font-size: 5em;
 	font-weight: bold;
 	letter-spacing: 0.2em;
-	margin: 0px 0px 0px 0px;
+	margin: 0px;
 }
 a {
 	text-decoration: none;
@@ -51,4 +52,62 @@ nav li {
 nav {
 	float: right;
 	margin: 0px 75px 0px 0px;
+}
+button {
+	background: none;
+	border: none;
+	color: #cccc9f;
+}
+button:hover {
+	color: #db4105;
+}
+button:active {
+	color: #33332d;
+}
+/* turns off annoying blue border */
+button:focus {
+	outline: 0;
+}
+#offscreen-left {
+	left: -300px;
+    top: 0px;
+    width: 300px;
+    height: 100%;
+	position: fixed;
+	background: #cccc9f;
+	color: #fff8e3;
+}
+#offscreen-top {
+    top: -200px;
+	left: 0px;
+    width: 100%;
+    height: 200px;
+	position: fixed;
+	background: #cccc9f;
+}
+#offscreen-right {
+	right: -300px;
+    top: 0px;
+    width: 300px;
+    height: 100%;
+	position: fixed;
+	background: #cccc9f;
+}
+body.left-active #offscreen-left {
+    left: 0px;
+}
+body.left-active {
+    margin-left: 300px;
+}
+body.top-active #offscreen-top {
+    top: 0px;
+}
+body.top-active {
+    margin-top: 200px;
+}
+body.right-active #offscreen-right {
+    right: 0px;
+}
+body.right-active {
+    margin-right: 300px;
 }
