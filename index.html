@@ -11,8 +11,8 @@
 	<h1><a href="index.html">Kingfishing</a></h1>
 		<nav>
 		<ul>
-			<li><button id="list">...</button></li>
-			<li><button id="about">?</button></li>
+			<li><button id="kotare">...</button></li>
+			<li><button id="eda">?</button></li>
 			<li><button id="tech">!</button></li>
 		</ul>
 		</nav>
@@ -46,11 +46,11 @@
 	<script type="text/javascript">
 		// Plain ol' JS for now...
 		document.addEventListener("DOMContentLoaded", function(event) { 
-			document.getElementById("list").addEventListener("click", function () {
+			document.getElementById("kotare").addEventListener("click", function () {
 				document.body.classList.toggle("left-active");
 				document.body.classList.remove("top-active", "right-active");
 			});
-			document.getElementById("about").addEventListener("click", function () {
+			document.getElementById("eda").addEventListener("click", function () {
 				document.body.classList.toggle("top-active");
 				document.body.classList.remove("left-active", "right-active");
 			});
