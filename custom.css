@@ -3,7 +3,7 @@
  * #db4105 - orange
  * #9fb4cc - blue
  * #33332d - dark grey
- * #cccc9f - light grey
+ * #cccc9f - light grey/green
  * #fff8e3 - pale
  */
 
@@ -30,7 +30,7 @@ h2 {
 	font-size: 2em;
 }
 a {
-	color: #9fb4cc;
+	color: #db4105;
 	text-decoration: none;
 }
 header a {
@@ -82,6 +82,13 @@ img.round {
 	margin: auto;
 	opacity: 0.5;
 	margin-top: 50px;
+}
+img.retro {
+	border-radius: 10px;
+	height: 150px;
+	margin: 15px 30px;
+	opacity: 0.3;
+	float: right;
 }
 #offscreen-left {
 	left: -300px;
