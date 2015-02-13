@@ -76,6 +76,13 @@ button:focus {
 main {
 	padding: 20px;
 }
+img.round {
+	display: block;
+	border-radius: 75px;
+	margin: auto;
+	opacity: 0.5;
+	margin-top: 50px;
+}
 #offscreen-left {
 	left: -300px;
     top: 0px;
