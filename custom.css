@@ -90,6 +90,13 @@ img.retro {
 	opacity: 0.3;
 	float: right;
 }
+img.code {
+	display: block;
+	border-radius: 75px;
+	margin: auto;
+	opacity: 0.5;
+	margin-top: 20px;
+}
 #offscreen-left {
 	left: -300px;
     top: 0px;
