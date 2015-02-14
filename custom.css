@@ -7,16 +7,30 @@
  * #fff8e3 - pale
  */
 
+html {
+	height: 100%;
+}
 body {
 	font-family: 'Roboto', sans-serif;
 	font-size: 1em;
 	background-color: #fff8e3;
 	color: #33332d;
+	height: 100%;
+}
+main {
+	min-height: 100%;
 }
 header {
 	display: table;
 	clear: both;
 	width: 100%;
+}
+footer {
+	text-align: center;
+	font-size: 0.9em;
+	color: #fff8e3;
+	background-color: #9fb4cc;
+	padding: 10px;
 }
 h1 {
 	font-family: "Shadows Into Light Two", cursive;
@@ -75,8 +89,6 @@ button:active {
 button:focus {
 	outline: 0;
 }
-main {
-}
 img.round {
 	display: block;
 	border-radius: 75px;
@@ -100,6 +112,7 @@ img.code {
 }
 section {
 	width: 100%;
+	height: 100%;
 	font-size: 1.1em;
 }
 #onscreen {
@@ -167,7 +180,6 @@ section {
 		left: -300px;
 		top: 0px;
 		width: 279px;
-		height: 100%;
 		position: fixed;
 		border-right: 1px solid #33332d;
 	}
@@ -183,7 +195,6 @@ section {
 		right: -300px;
 		top: 0px;
 		width: 279px;
-		height: 100%;
 		position: fixed;
 		border-left: 1px solid #33332d;
 	}
@@ -210,6 +221,10 @@ section {
 	}
 	body.right-active {
 		margin-right: 300px;
+	}
+	footer {
+		color: #33332d;
+		background-color: #fff8e3;
 	}
 }
 
