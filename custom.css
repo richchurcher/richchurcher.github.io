@@ -177,6 +177,12 @@ img.code {
 		position: fixed;
 		border-left: 1px solid #33332d;
 	}
+	body {
+		padding: 10px;
+	}
+	main {
+		padding: 20px;
+	}
 	body.left-active #offscreen-left {
 		left: 0px;
 	}
