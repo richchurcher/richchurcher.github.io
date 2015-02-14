@@ -99,6 +99,10 @@ img.code {
 	opacity: 0.5;
 	margin-top: 20px;
 }
+section {
+	width: 100%;
+	font-size: 1.1em;
+}
 #onscreen {
 	display: none; /* Only visible on larger screens. */
 }
@@ -145,6 +149,9 @@ img.code {
 @media only screen and (min-width: 600px) {
 	nav {
 		display: inline-block;
+	}
+	section {
+		font-size: 1em;
 	}
 	img.retro {
 		float: right;
