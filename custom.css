@@ -35,7 +35,7 @@ footer {
 	width: 100%;
 }
 h1 {
-	display: inline-block;
+	display: block;
 	position: relative;
 	font-family: "Shadows Into Light Two", cursive;
 	font-size: 3em;
