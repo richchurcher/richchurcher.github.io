@@ -1,7 +1,19 @@
 // Vanilla JavaScript challenge: write Tic Tac Toe without consulting a reference 
 // (other than MDN for syntax.)
+
 var browserMove = function() {
-    console.log("Browser's turn...");
+    var squares = document.getElementsByTagName("td");
+    for (var i=0;i<squares.length;i++) {
+        if (squares[i].classList.contains("x") ||
+            squares[i].classList.contains("o")) {
+            continue;
+        }
+        squares[i].classList.add("x");
+        return;
+    }
+
+    // No remaining empty squares
+    console.log("No more moves!");
 }
 
 var makeMove = function(e) {
