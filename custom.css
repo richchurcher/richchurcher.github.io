@@ -116,11 +116,38 @@ nav {
 		float: right;
 		margin: 15px;
 	}
+    #tictactoe {
+        text-align: right;
+        display: inline-block;
+        background: #fff8e3;
+        color: #33332d;
+        font-size: 1.1em;
+        width: 45%;
+    }
+    #board {
+        width:306px;
+        height:306px;
+    }
+    .square {
+        display: inline-block;
+        margin: -3px;
+        padding: 0;
+        border: 1px solid #cccc9f;
+        width: 100px;
+        height: 100px;
+    }
+    .x {
+        background: url(img/x.png);
+    }
+    .o {
+        background: url(img/o.png);
+    }
 	#onscreen {
-		display: block;
+		display: inline-block;
 		background: #fff8e3;
 		color: #33332d;
 		font-size: 1.1em;
+        width: 45%;
 	}
 	#onscreen h2 {
 		font-family: "Roboto", sans-serif;
@@ -147,11 +174,12 @@ nav {
 		position: fixed;
 		border-left: 1px solid #33332d;
 	}
-    #tictactoe {
-        background: #fff8e3;
+    html {
+        height: 100%;
     }
 	body {
-		 padding: 10px; 
+        min-height: 100%;
+        padding: 10px; 
 	}
 	nav {
 		display: inline-block;
@@ -184,6 +212,7 @@ nav {
 	}
 	main {
 		 padding: 20px; 
+         min-height: 100%;
 	}
 	body.left-active #offscreen-left {
 		left: 0px;
@@ -207,16 +236,5 @@ nav {
 		color: #33332d;
 		background-color: #fff8e3;
 	}
-    td {
-        border: 1px dotted #aaa;
-        width: 100px;
-        height: 100px;
-    }
-    td.x {
-        background: url(img/x.png);
-    }
-    td.o {
-        background: url(img/o.png);
-    }
 }
 

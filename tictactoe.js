@@ -37,13 +37,12 @@ var boardMap = function(squares, player) {
             board[i] = 0;
         }
     }
-    console.log(board);
     return board;
 }
 
 // Look for row, column, or diagonal win.
 var checkWinCondition = function(player) {
-    var squares = document.getElementsByTagName("td");
+    var squares = document.getElementsByClassName("square");
     var board = boardMap(squares, player);
     var r1 = [   
         1,1,1,
@@ -95,7 +94,7 @@ var checkWinCondition = function(player) {
 }
 
 var browserMove = function() {
-    var squares = document.getElementsByTagName("td");
+    var squares = document.getElementsByClassName("square");
     var emptySquares = [];
 
     // Build an array of empty squares
@@ -148,7 +147,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         document.body.classList.remove("left-active", "top-active");
     });
 */
-    var squares = document.getElementsByTagName("td");
+    var squares = document.getElementsByClassName("square");
     for (var i=0;i<squares.length;i++) {
         squares[i].addEventListener("click", makeMove);
     }
