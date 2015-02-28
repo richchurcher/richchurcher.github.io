@@ -117,7 +117,6 @@ nav {
 		margin: 15px;
 	}
     #tictactoe {
-        text-align: right;
         display: inline-block;
         background: #fff8e3;
         color: #33332d;
@@ -125,6 +124,8 @@ nav {
         width: 45%;
     }
     #board {
+        position: relative;
+        left: 60%;
         width:306px;
         height:306px;
     }
