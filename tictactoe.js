@@ -1,7 +1,17 @@
 // Vanilla JavaScript challenge: write Tic Tac Toe without consulting a reference 
 // (other than MDN for syntax.)
+var browserMove = function() {
+    console.log("Browser's turn...");
+}
+
 var makeMove = function(e) {
+    // Only add class if empty square
+    if (e.toElement.classList.contains("x") ||
+        e.toElement.classList.contains("o")) {
+        return;
+    }
     e.toElement.classList.add("o");
+    browserMove();
 }
 
 document.addEventListener("DOMContentLoaded", function(event) { 
