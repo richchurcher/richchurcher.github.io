@@ -204,5 +204,13 @@ nav {
 		color: #33332d;
 		background-color: #fff8e3;
 	}
+    td {
+        border: 1px dotted #aaa;
+        width: 100px;
+        height: 100px;
+    }
+    td.x {
+        background: url(img/x.png);
+    }
 }
 
