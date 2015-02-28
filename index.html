@@ -2,8 +2,8 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Shadows+Into+Light+Two|Roboto">
-    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.2/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Shadows+Into+Light+Two|Roboto">
+    <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.2/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="custom.css">
     <title>Kingfishing</title>
 </head>
@@ -19,17 +19,11 @@
         </nav>
     </header>
     <main>
-        <section id="onscreen">
-            <h2>Push Panels</h2>
-            <p>Use mystery-meat nav buttons to experiment.</p>
-            <h2>Responsive?</h2>
-            <p>Resize browser window or visit with a mobile device.</p>
-        </section>
         <section id="tictactoe">
             <table id="board">
                 <tr id="r1">
                     <td class="c1 x"></td>
-                    <td class="c2"></td>
+                    <td class="c2 o"></td>
                     <td class="c3"></td>
                 </tr>
                 <tr id="r2">
@@ -43,6 +37,12 @@
                     <td class="c3"></td>
                 </tr>
             </table>
+        </section>
+        <section id="onscreen">
+            <h2>Push Panels</h2>
+            <p>Use mystery-meat nav buttons to experiment.</p>
+            <h2>Responsive?</h2>
+            <p>Resize browser window or visit with a mobile device.</p>
         </section>
         <section id="offscreen-left">
             <img src="img/kotare.jpg" class="round">
@@ -83,5 +83,6 @@
             });
         });
     </script>
+    <script type="text/javascript" src="tictactoe.js"></script>
 </body>
 </html>

@@ -147,6 +147,9 @@ nav {
 		position: fixed;
 		border-left: 1px solid #33332d;
 	}
+    #tictactoe {
+        background: #fff8e3;
+    }
 	body {
 		 padding: 10px; 
 	}
@@ -211,6 +214,9 @@ nav {
     }
     td.x {
         background: url(img/x.png);
+    }
+    td.o {
+        background: url(img/o.png);
     }
 }
 
