@@ -143,6 +143,16 @@ nav {
     .o {
         background: url(img/o.png);
     }
+    #gameMessages {
+        text-align: center;
+        position: relative;
+        left: 60%;
+        width: 300px;
+    }
+    img.win {
+        width: 1.1em;
+        height: 1.1em;
+    }
 	#onscreen {
 		display: inline-block;
 		background: #fff8e3;

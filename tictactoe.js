@@ -87,8 +87,8 @@ var checkWinCondition = function(player) {
     var winConditions = [r1, r2, r3, c1, c2, c3, d1, d2];
     for (var i=0;i<winConditions.length;i++) {
         if (checkBoards(winConditions[i], board)) {
-            console.log("Win for " + player);
-            return;
+            document.getElementById("gameMessages").innerHTML =  
+                "<img src='img/" + player + ".png' class='win'> wins!";
         }
     }
 }
@@ -129,7 +129,7 @@ var makeMove = function(e) {
     e.toElement.classList.add("o");
     checkWinCondition("o");
     if (!browserMove()) {
-        Console.log("No more moves!");
+        document.getElementById("gameMessages").innerHTML = "No more moves!";
     }
 }
 
