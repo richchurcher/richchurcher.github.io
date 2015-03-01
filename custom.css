@@ -101,6 +101,12 @@ nav {
 #onscreen {
 	display: none;
 }
+#tictactoe {
+    display: none;
+}
+#tictactoe {
+    display: none;
+}
 
 /* Not a smaller window or device */
 @media only screen and (min-width: 600px) and (min-device-width: 400px) {
