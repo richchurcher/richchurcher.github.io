@@ -89,6 +89,7 @@ var checkWinCondition = function(player) {
         if (checkBoards(winConditions[i], board)) {
             document.getElementById("gameMessages").innerHTML =  
                 "<img src='img/" + player + ".png' class='win'> wins!";
+            endGame();
         }
     }
 }
@@ -120,6 +121,15 @@ var browserMove = function() {
     return true;
 }
 
+// Remove event listeners to prevent moves being made after a win condition
+var endGame = function() {
+    var squares = document.getElementsByClassName("square");
+    for (var i=0;i<squares.length;i++) {
+        squares[i].removeEventListener("click", makeMove);
+    }
+}
+
+// Player moves. Player is always "o".
 var makeMove = function(e) {
     // Only add class if empty square
     if (e.toElement.classList.contains("x") ||
@@ -130,6 +140,7 @@ var makeMove = function(e) {
     checkWinCondition("o");
     if (!browserMove()) {
         document.getElementById("gameMessages").innerHTML = "No more moves!";
+        endGame();
     }
 }
 
