@@ -139,7 +139,12 @@ var makeMove = function(e) {
     e.toElement.classList.add("o");
     checkWinCondition("o");
     if (!browserMove()) {
-        document.getElementById("gameMessages").innerHTML = "No more moves!";
+        m = document.getElementById("gameMessages");
+
+        // Don't overwrite win message
+        if (m.innerHTML.indexOf("wins") === -1) { 
+            m.innerHTML = "It's a draw!";
+        }
         endGame();
     }
 }
