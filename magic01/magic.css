@@ -1,0 +1,8 @@
+html, body {
+  height: 100%;
+}
+
+.circle {
+  border-radius: 50%;
+  display: inline-block;
+}
