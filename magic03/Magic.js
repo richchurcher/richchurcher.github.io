@@ -3,7 +3,7 @@ var Magic = function () {
     return Math.floor(Math.random() * (max - min)) + min;
   }
 
-  this.width = randomiseMagic(10, 50);
+  this.width = randomiseMagic(10, 20);
   this.height = this.width;
   this.top = randomiseMagic(0, document.documentElement.clientHeight);
   this.left = randomiseMagic(0, document.documentElement.clientWidth);
