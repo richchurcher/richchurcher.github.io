@@ -1,0 +1,10 @@
+html, body {
+  height: 100%;
+  background: #aaa;
+  overflow: hidden;
+}
+
+.circle {
+  border-radius: 50%;
+  position: absolute;
+}
