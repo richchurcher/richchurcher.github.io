@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Shadows+Into+Light+Two|Roboto">
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.2/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="custom.css">
+    <title>Kingfishing</title>
+</head>
+<body>
+    <header>
+        <h1><a href="original/index.html">Kingfishing</a></h1>
+        <nav>
+        <ul>
+            <li><button id="kotare">...</button></li>
+            <li><button id="eda">?</button></li>
+            <li><button id="tech">!</button></li>
+        </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="onscreen">
+            <h2>Push Panels</h2>
+            <p>Use mystery-meat nav buttons to experiment.</p>
+            <h2>Responsive?</h2>
+            <p>Resize browser window or visit with a mobile device.</p>
+            <h2>Cross Origin Resource Sharing</h2>
+            <p>Demo: jQuery API requests to another domain running an App Engine app written in Go.</p>
+            <p>Check out <a href="https://github.com/richchurcher/richchurcher/tree/master/post">the Go source</a> on GitHub.</p>
+            <p>(Note: fails if this site is loaded using https.)</p>
+            <h3>GET</h3>
+            <p><pre id="getResponse"></pre></p>
+            <h3>Create (POST)</h3>
+            <p><pre id="createResponse"></pre></p>
+            <h3>Update (PUT)</h3>
+            <p><pre id="updateResponse"></pre></p>
+        </section>
+        <section id="tictactoe">
+            <div id="board">
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+            </div>
+            <p id="gameMessages">Click to play!</p>
+        </section>
+        <section id="offscreen-left">
+            <img src="img/kotare.jpg" class="round">
+            <h2>Kotare</h2>
+            <p>It's a kingfisher. <a href="http://nzbirds.com/birds/kotare.html">The New Zealand kingfisher</a>, in fact. It's also the name of an EDA cohort.</p>
+        </section>
+        <section id="offscreen-top">
+            <img src="img/comppic.png" class="retro">
+            <h2>About Dev Academy</h2>
+            <p><a href="http://devacademy.org">Enspiral Dev Academy</a> is an intensive, full-time course in software development.</p>
+            <p>Dev Academy: creating <strong>world class beginners</strong> since 2014.</p>
+        </section>
+        <section id="offscreen-right">
+            <h2>Tech</h2>
+            <p><strong>Push panels</strong> can be implemented by hiding the panel using a negative initial position value, then shifting body's corresponding margin property.</p>
+            <p>For example, this panel uses <strong>right: -300px;</strong>, and <strong>margin-right: 300px;</strong> is applied to the body element on activation.</p>
+            <p>Although <a href="http://jquery.com">jQuery</a> might easily be used to select elements and apply the necessary classes, this can be done in <strong>vanilla JS</strong> using the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element.classList">HTML5 classList API</a>. No class change is required on this panel itself: only the <strong>body</strong> changes, via <strong>document.body.classList.toggle("right-active");</strong> at the cost of some earlier browser support.</p>
+            <img src="img/code.jpg" class="code">
+        </section>
+    </main>
+    <footer>
+        <p>Photo credits: <a href="https://www.flickr.com/photos/dcysurfer/3673104617">Dave Young</a> and <a href="https://www.flickr.com/photos/dmitry-baranovskiy/2378867408">Dmitry Baranovskiy</a> under <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a>.</p>
+    </footer>
+    <script type="text/javascript">
+        // Plain ol' JS for now...
+        document.addEventListener("DOMContentLoaded", function(event) { 
+            document.getElementById("kotare").addEventListener("click", function () {
+                document.body.classList.toggle("left-active");
+                document.body.classList.remove("top-active", "right-active");
+            });
+            document.getElementById("eda").addEventListener("click", function () {
+                document.body.classList.toggle("top-active");
+                document.body.classList.remove("left-active", "right-active");
+            });
+            document.getElementById("tech").addEventListener("click", function () {
+                document.body.classList.toggle("right-active");
+                document.body.classList.remove("left-active", "top-active");
+            });
+        });
+    </script>
+    <script type="text/javascript" src="tictactoe.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript" src="blog.js"></script>
+</body>
+</html>
