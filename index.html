@@ -2,31 +2,80 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.2/normalize.min.css">
-    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+    <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.2/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Raleway">
     <link rel="stylesheet" type="text/css" href="custom.css">
+
     <title>Portfolio</title>
 </head>
 <body>
-    <header>
-        <h1>Portfolio</h1>
-        <nav>
-        <ul>
-            <li>Mini-Angular Magics <a href="magic01.html">1</a>, <a href="magic02.html">2</a>, <a href="magic03.html">3</a>, <a href="magic04.html">4</a> (warning: web audio api)</li>
-            <li><a id=""></a></li>
-            <li><a id=""></a></li>
-        </ul>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <h2>One</h2>
-            <p>One</p>
-            <h2>Two</h2>
-            <p>Two</p>
-            <h2>Three</h2>
-            <p>Three</p>
-        </section>
-    </main>
+    <nav>
+    <ul>
+        <li>
+            <figure>
+                <img src="img/socialnews.png" class="preview">
+                <figcaption>Social News: an open source SOA from <a href="https://github.com/joshuavial">Josh Vial</a> aimed at gamifying the news. Writing the Reddit feeder in Go.</figcaption>
+            </figure>
+            <a href="https://github.com/socialnews/reddit-feeder">Social News</a>
+        </li>
+        <li>
+            <figure>
+                <img src="img/inkling.png" class="preview">
+                <figcaption>Phase 3 Dev Academy project, a crazy mutated 3js mind map. Wrote the Node backend, refactored some of the front.</figcaption>
+            </figure>
+            <a href="https://inkling.space">Inkling</a>
+        </li>
+        <li>
+            <figure>
+                <img src="img/go.png" class="preview">
+                <figcaption>Mish-mash of experiments from early-on, including a Javascript tic tac toe, some AJAX calls to a Go API hosted on App Engine, and sliding panels.</figcaption>
+            </figure>
+            The <a href="original/index.html">original version</a> of this page, back in Phase 0 of <a href="http://devacademy.co.nz">Dev Academy</a>.
+        </li>
+        <li>Mini-Angular Magics (warning: web audio api):
+            <ul>
+                <li>
+                    <figure>
+                        <img src="img/magic01.png" class="preview">
+                        <figcaption>At about week four into Dev Academy I discovered the Web Audio API and... well, this sort of thing started happening.</figcaption>
+                    </figure>
+                    <a href="magic01.html">1</a>,
+                </li>
+                <li>
+                    <figure>
+                        <img src="img/magic02.png" class="preview">
+                        <figcaption>Add some radius and it goes round...</figcaption>
+                    </figure>
+                    <a href="magic02.html">2</a>,
+                </li>
+                <li>
+                    <figure>
+                        <img src="img/magic03.png" class="preview">
+                        <figcaption>...and around...</figcaption>
+                    </figure>
+                    <a href="magic03.html">3</a>,
+                </li>
+                <li>
+                    <figure>
+                        <img src="img/magic04.png" class="preview">
+                        <figcaption>etc.</figcaption>
+                    </figure>
+                    <a href="magic04.html">4</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <figure>
+                <img id="github" class="preview">
+                <figcaption>It's a <strong>working</strong> mess, ok???</figcaption>
+            </figure>
+            <a href="https://github.com/richchurcher">GitHub</a>. Represents group/team work and process, not finished product.
+        </li>
+    </ul>
+    </nav>
+
+    <header id="green"><h1>#009d12</h1></header>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="preview.js"></script>
 </body>
 </html>

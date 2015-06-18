@@ -1,103 +1,85 @@
 html {
 	box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
 }
 * , *:before, *:after { 
 	box-sizing: inherit;
 }
-body {
-	font-size: 1em;
-}
+
 header {
-	width: 100%;
-	text-align: right;
-}
-footer {
-	text-align: center;
-	font-size: 0.8em;
-	color: #fff8e3;
-	background-color: #9fb4cc;
-	padding: 10px;
-	width: 100%;
-}
-h1 {
-	display: block;
-	position: relative;
-	font-size: 3em;
-	margin: 15px;
-}
-h2 {
-	font-size: 2em;
-}
-a {
-	color: #db4105;
-	text-decoration: none;
-}
-header a {
-}
-header a:hover {
-}
-header a:active {
-}
-header a:visited {
-}
-section {
-	width: 100%;
-	height: 100%;
-	font-size: 1.1em;
-	padding: 15px;
+    background-color: #009d12;
 }
 
-/* Only visible in larger screens */
-nav {
-	display: none; 
+h1 {
+    margin: 0px;
+    color: #96ED89;
+    font-style: italic;
+    font-weight: bold;
+    letter-spacing: 0.3em;
+    font-size: 2.5em;
 }
-#onscreen {
-	display: none;
+
+ul ul li {
+    display: inline-block;
+    padding: 0.3em;
 }
-#tictactoe {
+
+li {
+    list-style: none;
+    margin: 0.2em;
+}
+
+a {
+    color:#009d12;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    color:#45BF55;
+}
+
+figure {
     display: none;
 }
-#tictactoe {
-    display: none;
+
+figure img {
+    opacity: 50%;
+    border-radius: 5%;
+}
+
+figcaption {
+    font-size: 0.9em;
+    font-style: italic;
+    line-height: 1.5em;
 }
 
 /* Not a smaller window or device */
 @media only screen and (min-width: 600px) and (min-device-width: 400px) {
-	h1 {
-		font-size: 5em;
-		letter-spacing: 0.2em;
-	}
-	section {
-		font-size: 0.9em;
-		padding: 0px 10px;
-	}
-	img.retro {
-		float: right;
-		margin: 15px;
-	}
     html {
         height: 100%;
     }
 	body {
         min-height: 100%;
-        padding: 10px; 
 	}
+    header {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        padding: 0.5em;
+        text-align: right;
+    }
 	nav {
-		display: inline-block;
-		position: relative;
-		margin: 0px 75px 0px 0px;
-		min-width: 280px; /* Prevent wrap */
+        position: fixed;
+        bottom: 4em;
+        right: 1em;
+        text-align: right;
 	}
-	nav li {
-		list-style: none;
-		display: inline-block;
-		font-size: 4em;
-		font-weight: bold;
-		margin: 0px 20px; 0px; 20px;
-	}
-	main {
-		 padding: 20px; 
-         min-height: 100%;
-	}
+    figure {
+        text-align: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 450px;
+    }
 }
-
