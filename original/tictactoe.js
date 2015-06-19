@@ -88,7 +88,7 @@ var checkWinCondition = function(player) {
     for (var i=0;i<winConditions.length;i++) {
         if (checkBoards(winConditions[i], board)) {
             document.getElementById("gameMessages").innerHTML =  
-                "<img src='img/" + player + ".png' class='win'> wins!";
+                "<img src='../img/" + player + ".png' class='win'> wins!";
             endGame();
         }
     }

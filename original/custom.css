@@ -144,10 +144,10 @@ nav {
         height: 100px;
     }
     .x {
-        background: url(img/x.png);
+        background: url(../img/x.png);
     }
     .o {
-        background: url(img/o.png);
+        background: url(../img/o.png);
     }
     #gameMessages {
         text-align: center;
