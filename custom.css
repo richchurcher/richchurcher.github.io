@@ -19,7 +19,7 @@ header {
 nav {
     position: static;
     text-align: left;
-    margin-top: 5em;
+    margin-top: 6em;
 }
 
 h1 {
@@ -66,28 +66,27 @@ figcaption {
     line-height: 1.5em;
 }
 
-/* Not a smaller window or device */
 @media (min-width: 600px) and (min-device-width: 400px) {
-    html {
-        height: 100%;
-    }
+  html {
+      height: 100%;
+  }
 	body {
         min-height: 100%;
 	}
-    header {
-        top: 90%;
-    }
+  header {
+      top: 90%;
+  }
 	nav {
-        position: fixed;
-        bottom:4em;
-        right: 1em;
-        text-align: right;
+      position: fixed;
+      bottom:4em;
+      right: 1em;
+      text-align: right;
 	}
-    figure {
-        text-align: center;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 450px;
-    }
+  figure {
+      text-align: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 450px;
+  }
 }
