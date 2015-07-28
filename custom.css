@@ -1,22 +1,34 @@
+@import url(http://fonts.googleapis.com/css?family=Special+Elite|Merriweather);
+
 html {
-	box-sizing: border-box;
-    font-family: "Raleway", sans-serif;
+  box-sizing: border-box;
+  font-family: "Merriweather", "Raleway", sans-serif;
 }
 * , *:before, *:after { 
 	box-sizing: inherit;
 }
 
 header {
-    background-color: #009d12;
+    position: fixed;
+    top: 5%;
+    width: 100%;
+    padding: 0.5em;
+    text-align: right;
+}
+
+nav {
+    position: static;
+    text-align: left;
+    margin-top: 5em;
 }
 
 h1 {
     margin: 0px;
-    color: #96ED89;
-    font-style: italic;
+    color: #303030;
     font-weight: bold;
     letter-spacing: 0.3em;
-    font-size: 1.5em;
+    font-size: 2em;
+    font-family:"Special Elite","Merriweather",sans-serif;
 }
 
 ul ul li {
@@ -30,7 +42,7 @@ li {
 }
 
 a {
-    color:#009d12;
+    color:#2d2b7e;
     font-weight: bold;
     text-decoration: none;
 }
@@ -55,7 +67,7 @@ figcaption {
 }
 
 /* Not a smaller window or device */
-@media only screen and (min-width: 600px) and (min-device-width: 400px) {
+@media (min-width: 600px) and (min-device-width: 400px) {
     html {
         height: 100%;
     }
@@ -63,15 +75,11 @@ figcaption {
         min-height: 100%;
 	}
     header {
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-        padding: 0.5em;
-        text-align: right;
+        top: 90%;
     }
 	nav {
         position: fixed;
-        bottom: 4em;
+        bottom:4em;
         right: 1em;
         text-align: right;
 	}
