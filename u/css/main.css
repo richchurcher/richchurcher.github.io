@@ -20,7 +20,7 @@ a, a:hover { text-decoration: none; }
 
 #splash {
   color: white;
-  background: #fff url(../images/hero-image.jpg) no-repeat;
+  background: #fff url(../images/hero-image.jpg) no-repeat center;
   background-size: cover;
   min-height: 550px;
 }
@@ -56,7 +56,7 @@ hr.short {
   width: 20rem;
 }
 
-div.right-arrow {
+#register .right-arrow {
   display: none;
 }
 
@@ -283,7 +283,7 @@ form {
     margin: 0 2rem 1rem 2rem;
   }
 
-  .logo-container-main {
+  .container ul li.logo-container-main {
     color: #fefd7f;
     border: 0.4rem solid #fefd7f;
     margin: 0 2rem 0 2rem;
@@ -309,7 +309,7 @@ form {
     margin-bottom: 3rem;
   }
 
-  .right-arrow {
+  #register .right-arrow {
     display: inline;
     position: relative;
     color: #efefef;
@@ -320,7 +320,7 @@ form {
     padding: 0;
   }
 
-  .right-arrow span {
+  #register .right-arrow span {
     position: absolute;
     margin-top: -3rem;
   }
