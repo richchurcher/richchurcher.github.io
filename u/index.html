@@ -15,7 +15,7 @@
     <ul>
       <li><div class="vertical-center"><a href="#">LINK ONE</a></div></li>
       <li><div class="vertical-center"><a href="#">LINK TWO</a></div></li>
-      <li class="logo-container"><span class="logo">LOGO</span></li>
+      <li class="logo-container logo-container-main"><span class="logo">LOGO</span></li>
       <li><div class="vertical-center"><a href="#">LINK THREE</a></div></li>
       <li><div class="vertical-center"><a href="#">LINK FOUR</a></div></li>
     </ul>
@@ -69,18 +69,38 @@
         <span class="select-arrow glyphicon glyphicon-menu-down"></span>
         <select name="country" type="text" class="form-control">
           <option value="" disabled selected>Country</option>
-          <option value="australia">Australia</option>
-          <option value="newzealand">New Zealand</option>
+          <option value="aq">Antarctica</option>
+          <option value="au">Australia</option>
+          <option value="ck">Cook Islands</option>
+          <option value="fj">Fiji</option>
+          <option value="pf">French Polynesia</option>
+          <option value="nc">New Caledonia</option>
+          <option value="nz">New Zealand</option>
+          <option value="pg">Papua New Guinea</option>
+          <option value="ws">Samoa</option>
+          <option value="sb">Solomon Islands</option>
+          <option value="tk">Tokelau</option>
+          <option value="to">Tonga</option>
+          <option value="vu">Vanuatu</option>
         </select>
       </div>
     </div>
 
-    <div class="form-group form-group-lg">
-      <div class="col-sm-1 col-sm-offset-2 rdsh"><span>&#11185;</span></div>
+    <div id="city" class="form-group form-group-lg">
+      <div class="col-sm-1 col-sm-offset-2 right-arrow"><span>&#11185;</span></div>
       <div class="col-sm-7 col-sm-offset-0 col-xs-10 col-xs-offset-1 select">
         <span class="select-arrow glyphicon glyphicon-menu-down"></span>
         <select name="city" type="text" class="form-control">
           <option value="" disabled selected>City</option>
+          <option value="akl">Auckland</option>
+          <option value="wlg">Wellington</option>
+          <option value="chc">Christchurch</option>
+          <option value="dud">Dunedin</option>
+          <option value="trg">Tauranga</option>
+          <option value="pmr">Palmerston North</option>
+          <option value="rot">Rotorua</option>
+          <option value="npe">Napier</option>
+          <option value="wre">Whangarei</option>
         </select>
       </div>
     </div>
@@ -90,11 +110,16 @@
         <span class="select-arrow glyphicon glyphicon-menu-down"></span>
         <select name="tickets" type="text" class="form-control" required>
           <option value="" disabled selected>Number of tickets*</option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+          <option value="4">Four</option>
+          <option value="5">Five</option>
         </select>
       </div>
     </div>
 
-    <div id="form-separator" class="form-group">
+    <div class="form-group form-separator">
       <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
         <hr>
       </div>
@@ -105,8 +130,8 @@
       <div id="total-price" class="col-xs-3 col-xs-offset-4 col-sm-3 col-sm-offset-2">(tickets x $50)</div>
     </div>
 
-    <div id="submit" class="form-group">
-      <div id="submit" class="col-md-xs-12"><button type="submit">SUBMIT <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></button></div>
+    <div class="form-group">
+      <div class="col-md-xs-12 submit"><button type="submit">SUBMIT <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></button></div>
     </div>
   </form>
 
@@ -144,7 +169,7 @@
     </div>
     <div id="copyright" class="col-sm-3 col-md-4">
       <div class="float-right">
-        <div class="logo-container">
+        <div class="logo-container logo-container-copyright">
           <span class="logo">LOGO</span>
         </div>
         <div>Copyright 2015</div>
