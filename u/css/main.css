@@ -20,7 +20,7 @@ a, a:hover { text-decoration: none; }
 
 #splash {
   color: white;
-  background: #fff url(/images/hero-image.jpg) no-repeat;
+  background: #fff url(../images/hero-image.jpg) no-repeat;
   background-size: cover;
   min-height: 550px;
 }
@@ -56,7 +56,7 @@ hr.short {
   width: 20rem;
 }
 
-.right-arrow {
+div.right-arrow {
   display: none;
 }
 
