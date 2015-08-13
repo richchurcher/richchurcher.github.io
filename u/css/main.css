@@ -47,7 +47,7 @@ footer a:hover {
 
 #splash {
   color: white;
-  background: #fff url(/images/hero-image.jpg) no-repeat;
+  background: #fff url(../images/hero-image.jpg) no-repeat;
   background-size: cover;
   min-height: 550px;
 }
