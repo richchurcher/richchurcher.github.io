@@ -283,10 +283,10 @@ form {
     margin: 0 2rem 1rem 2rem;
   }
 
-  .container ul li.logo-container-main {
+  #splash .logo-container-main {
     color: #fefd7f;
     border: 0.4rem solid #fefd7f;
-    margin: 0 2rem 0 2rem;
+    margin: 0 2rem 0 2rem !important;
   }
 
 
