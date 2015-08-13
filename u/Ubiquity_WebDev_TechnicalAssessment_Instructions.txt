@@ -1,0 +1,36 @@
+﻿Ubiquity – Front End Web Developer’s Technical Assessment
+
+
+* Develop the attached web page with valid HTML and CSS. (image assets also provided)
+
+
+* The page must be fully responsive - it is up to you how you want to display it on different device widths, feel free to move elements around or come up with a creative mobile navigation using best practices.
+
+
+* The page does not have to submit, this is purely a front-end exercise. 
+
+
+* You must include all the elements in the design. 
+
+
+* The font used is ‘Open Sans’ – this is available via Google Fonts.
+
+
+
+
+Form Rules: 
+
+
+* Populate the 'Country' field with at least 5 countries, but make sure to include New Zealand. 
+
+
+* Using jQuery, only show the 'City' field when 'New Zealand' is selected from the 'Country' field - so on landing the 'City' field should not be present. 
+
+
+* Populate the 'City' field with at least 3 New Zealand cities. 'Number of tickets' should have a max of 5 as the options. 
+
+
+* Using jQuery, calculate and output the total price instead of (tickets x $50) - each ticket is $50.
+
+
+* Feel free to use your creativity to improve the page with justification. Interactivity with the page is totally up to you, feel free to style different states such as hover/focus etc as you see fit. Package all your files in a zip and send them through.
