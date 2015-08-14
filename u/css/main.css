@@ -240,6 +240,7 @@ form {
       font-size: 1.8rem;
       font-weight: 600;
       padding: 1rem 5rem 1rem 5rem;
+      transition: background-color 0.3s;
     }
 
     div.submit button:hover {
