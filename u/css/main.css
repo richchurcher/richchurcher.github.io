@@ -4,7 +4,6 @@
 body {
   background: #fff;
   font-family: "Open Sans",sans-serif;
-  min-width: 545px;
 }
 
 ul {
@@ -27,6 +26,7 @@ a, a:hover { text-decoration: none; }
 
 #register {
   color: black;
+  background: #fff url(../images/yellow-zig-zag.png) no-repeat center;
   font-weight: 300;
   height: 100%;
 }
@@ -35,7 +35,7 @@ footer {
   color: #cccccc;
   border-top: 1px #efefef solid;
   font-size: 1.5rem;
-  font-weight: 600;
+  font-weight: 400;
   margin-top: 5rem;
   padding: 3rem 10rem 3rem 10rem;
   min-height: 30rem;
@@ -53,7 +53,7 @@ hr {
 }
 
 hr.short {
-  width: 20rem;
+  width: 13rem;
 }
 
 #register .right-arrow {
@@ -92,6 +92,7 @@ h3 {
 .subhead {
   color: white;
   font-size: 1.7rem;
+  font-weight: 300;
   text-align: center;
 }
 
@@ -149,7 +150,7 @@ mark {
 
 /* --- Navigation --- */
 nav {
-  margin: 2rem 0 4rem 0;
+  margin: 2rem 0 2rem 0;
 }
 
   nav ul {
@@ -168,7 +169,6 @@ nav {
     display: inline-block;
     margin: 0 0.5rem 0 0.5rem;
     font-size: 1.5em;
-    vertical-align: middle;
   }
 
 
@@ -239,6 +239,11 @@ form {
     display: none;
   }
 
+  #city .select {
+    padding-right: 0.5rem;
+    margin-top: -2rem;
+  }
+
   .form-separator {
     margin-top: 0;
     margin-bottom: 1.5rem;
@@ -286,11 +291,35 @@ form {
   #splash .logo-container-main {
     color: #fefd7f;
     border: 0.4rem solid #fefd7f;
-    margin: 0 2rem 0 2rem !important;
+    margin: 0 2rem 0 2rem;
+  }
+
+  #splash .logo-container-mobile {
+    margin: auto;
+    margin-bottom: 2rem;
+  }
+
+  #splash li.logo-container-main {
+    display: none;
   }
 
 
+
 /* --- Responsive --- */
+@media screen and (min-width: 600px) {
+  #splash nav li {
+    vertical-align: middle;
+  }
+
+  #splash li.logo-container-main {
+    display: inline-block;
+  }
+
+  .logo-container-mobile {
+    display: none;
+  }
+}
+
 @media screen and (min-width: 768px) {
   h1 {
     font-size: 5rem;
@@ -299,6 +328,10 @@ form {
 
   .subhead {
     padding: 0rem 3rem 0 3rem;
+  }
+
+  nav {
+    margin-bottom: 4rem;
   }
 
   #down {
@@ -322,7 +355,7 @@ form {
 
   #register .right-arrow span {
     position: absolute;
-    margin-top: -3rem;
+    margin-top: -4rem;
   }
 
   footer {
