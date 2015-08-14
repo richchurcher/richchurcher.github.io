@@ -57,23 +57,27 @@
 
     <div class="form-group form-group-lg">
       <div class="col-xs-5 col-xs-offset-1 col-sm-4 col-sm-offset-2">
-        <input name="first-name" type="text" class="form-control" placeholder="First name*" required>
+        <label for="reg-first-name" class="sr-only">First name</label>
+        <input id="reg-first-name" name="first-name" type="text" class="form-control" placeholder="First name*" required>
       </div>
       <div class="col-xs-5 col-sm-4">
-        <input name="last-name" type="text" class="form-control" placeholder="Last name">
+        <label for="reg-last-name" class="sr-only">Last name</label>
+        <input id="reg-last-name" name="last-name" type="text" class="form-control" placeholder="Last name">
       </div>
     </div>
 
     <div class="form-group form-group-lg">
       <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
-        <input name="email" type="email" class="form-control" placeholder="Email Address*" required>
+        <label for="reg-email" class="sr-only">Email</label>
+        <input id="reg-email" name="email" type="email" class="form-control" placeholder="Email Address*" required>
       </div>
     </div>
 
     <div class="form-group form-group-lg">
       <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 select">
         <span class="select-arrow glyphicon glyphicon-menu-down"></span>
-        <select name="country" type="text" class="form-control">
+        <label for="reg-country" class="sr-only">Country</label>
+        <select id="reg-country" name="country" type="text" class="form-control">
           <option value="" disabled selected>Country</option>
           <option value="aq">Antarctica</option>
           <option value="au">Australia</option>
@@ -96,7 +100,8 @@
       <div class="col-sm-1 col-sm-offset-2 right-arrow"><span>&#11185;</span></div>
       <div class="col-sm-7 col-sm-offset-0 col-xs-10 col-xs-offset-1 select">
         <span class="select-arrow glyphicon glyphicon-menu-down"></span>
-        <select name="city" type="text" class="form-control">
+        <label for="reg-city" class="sr-only">City</label>
+        <select id="reg-city" name="city" type="text" class="form-control">
           <option value="" disabled selected>City</option>
           <option value="akl">Auckland</option>
           <option value="wlg">Wellington</option>
@@ -114,7 +119,8 @@
     <div class="form-group form-group-lg">
       <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 select">
         <span class="select-arrow glyphicon glyphicon-menu-down"></span>
-        <select name="tickets" type="text" class="form-control" required>
+        <label for="reg-tickets" class="sr-only">Tickets</label>
+        <select id="reg-tickets" name="tickets" type="text" class="form-control" required>
           <option value="" disabled selected>Number of tickets*</option>
           <option value="1">One</option>
           <option value="2">Two</option>
@@ -137,7 +143,9 @@
     </div>
 
     <div class="form-group">
-      <div class="col-md-xs-12 submit"><button type="submit">SUBMIT <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></button></div>
+      <div class="col-md-xs-12 submit">
+        <button type="submit">SUBMIT <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></button>
+      </div>
     </div>
   </form>
 
