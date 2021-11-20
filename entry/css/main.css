@@ -1,0 +1,30 @@
+html,
+body {
+  height: 100%;
+}
+
+.center-content {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.margin10 {
+  margin: 10rem;
+}
+
+a,
+a:visited,
+a:active {
+  color: #333;
+  text-decoration: none;
+  font-size: 3rem;
+}
+
+a:hover {
+  color: #666;
+}
